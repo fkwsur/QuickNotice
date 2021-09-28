@@ -1,0 +1,61 @@
+{
+  "name": "quicknotice",
+  "version": "1.0.0",
+  "main": "./public/electron.js",
+  "homepage": "./",
+  "private": true,
+  "dependencies": {
+    "@firebase/auth": "^0.16.8",
+    "@fullcalendar/daygrid": "5.5.0",
+    "@fullcalendar/interaction": "5.5.0",
+    "@fullcalendar/react": "5.5.0",
+    "@fullcalendar/timegrid": "5.5.0",
+    "axios": "^0.21.1",
+    "firebase": "^8.8.1",
+    "history": "^5.0.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.1",
+    "react-big-calendar": "^0.33.2",
+    "react-dom": "^17.0.1",
+    "react-event-calendar": "^0.3.0",
+    "react-paginate": "^7.1.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.0.5",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && electron-builder --dir"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-do-expressions": "^7.14.0",
+    "electron": "^12.0.1",
+    "electron-builder": "^22.10.5"
+  },
+  "build": {
+    "appId": "com.example.electron-react",
+    "productName": "electron-react",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ]
+  },
+  "proxy": "http://localhost:8081"
+}

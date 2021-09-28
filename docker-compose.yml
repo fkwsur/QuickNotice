@@ -1,0 +1,12 @@
+
+version: "3"
+
+services:
+  quicknotice_client:
+    build: "./quicknotice_client"
+    ports:
+      - "3000:3000"
+  quicknotice_server:
+    build: "./quicknotice_server"
+    ports:
+      - "8081:8081"
